@@ -213,3 +213,7 @@ span.validate-tooltip {
     position: static;
   }
 }
+.submit{
+  background: rgb(38, 139, 38);
+  color: wheat;
+}

@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Login form with JavaScript Validation</title>
+  <title>MPESA API</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="css/style.css">
 
@@ -17,15 +17,15 @@
   <div class="inner-warpper text-center">
     <h2 class="title">Lipa na Mpesa <br>(Pay Bill)</h2>
     <h2 class="title"></h2>
-    <form action="" id="formvalidate">
+    <form id="formvalidate" action="action.php" method="POST">
       <div class="input-group">
         <label class="palceholder" for="userName">Your Phone Number</label>
-        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+        <input class="form-control" name="phone_number" id="userName" type="text" placeholder="" />
         <span class="lighting"></span>
       </div>
       <div class="input-group">
         <label class="palceholder" for="userName">Amount</label>
-        <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+        <input class="form-control" name="amount" id="userName" type="text" placeholder="" />
         <span class="lighting"></span>
       </div>
       <div class="input-group">
@@ -39,7 +39,20 @@
         <span class="lighting"></span>
       </div>
 
-      <button type="submit" id="login">CHECK OUT</button>
+      <input type="submit"type="submit" id="login"
+      style="
+        cursor: pointer;
+          background: #00A885;
+          width: 100%;
+          border: 0;
+          padding: 10px 15px;
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          -webkit-transition: 0.3s linear;
+          transition: 0.3s linear;
+      "
+      value="CHECK OUT"/>
       <div class="clearfix supporter">
         <div class="pull-left remember-me">
           <input id="rememberMe" type="checkbox">
